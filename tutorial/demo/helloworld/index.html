@@ -29,20 +29,21 @@
         </body>
         <script src="../../../node_modules/three/build/three.min.js" charset="utf-8"></script>
         <script type="text/javascript">
-                var scene = new THREE.Scene();
+                var scene = new THREE.Scene(); // 场景
 
-                var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+                var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000); // 透视相机
 
-                var renderer = new THREE.WebGLRenderer();
+                var renderer = new THREE.WebGLRenderer(); // 渲染器
 
-                renderer.setSize(window.innerWidth, window.innerHeight);
+                renderer.setSize(window.innerWidth, window.innerHeight); // 设置渲染器的大小为窗口的内宽度，也就是内容区的宽度
 
                 document.getElementById("canvas-frame").appendChild(renderer.domElement);
 
                 var geometry = new THREE.CubeGeometry(1,1,1);
-
                 var material = new THREE.MeshBasicMaterial({color: "rgba(48, 108, 182, 0.8)"});
-                var cube = new THREE.Mesh(geometry, material); scene.add(cube);
+                var cube = new THREE.Mesh(geometry, material);
+
+                scene.add(cube);// 添加物体到场景中
 
                 camera.position.z = 5;
 
