@@ -20,6 +20,8 @@
 
 [WebGL_API](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGL_API)
 
+[WebVR + three.js实例](https://zhuanlan.zhihu.com/p/20796329)
+
 3D 和 VR（Virtual Reality） 的区别
 
 FPS指画面每秒传输帧数, 通俗来讲就是指游戏和动画或视频的画面数，每秒帧数愈多, 画面越流畅，要避免动作不流畅的最低是30
